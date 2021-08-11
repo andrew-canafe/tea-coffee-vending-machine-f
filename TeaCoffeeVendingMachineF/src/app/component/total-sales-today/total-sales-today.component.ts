@@ -3,11 +3,11 @@ import { SaleRow } from 'src/app/model/sale-row/sale-row';
 import { SaleService } from 'src/app/service/sale-service/sale-service.service';
 
 @Component({
-  selector: 'app-sale-today',
-  templateUrl: './sale-today.component.html',
-  styleUrls: ['./sale-today.component.css']
+  selector: 'app-total-sales-today',
+  templateUrl: './total-sales-today.component.html',
+  styleUrls: ['./total-sales-today.component.css']
 })
-export class SaleTodayComponent implements OnInit {
+export class TotalSalesTodayComponent implements OnInit {
 
   saleRows: SaleRow[] = [];
 

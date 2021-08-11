@@ -6,14 +6,14 @@ import { RefillCounterComponent } from './component/refill-counter/refill-counte
 import { ChooseDrinkComponent } from './component/choose-drink/choose-drink.component';
 import { ReportViewComponent } from './component/report-view/report-view.component';
 import { TotalSalesAllDaysComponent } from './component/total-sales-all-days/total-sales-all-days.component';
-import { SaleTodayComponent } from './component/sale-today/sale-today.component';
+import { TotalSalesTodayComponent } from './component/total-sales-today/total-sales-today.component';
 
 const routes: Routes = [
   { path: 'container-status', component: ContainerStatusComponent},
   { path: 'container-refill', component: ContainerRefillComponent},
   { path: 'refill-counter', component: RefillCounterComponent},
   { path: 'total-sales/all-days' , component: TotalSalesAllDaysComponent},
-  { path: 'total-sales/today', component: SaleTodayComponent},
+  { path: 'total-sales/today', component: TotalSalesTodayComponent},
   { path: 'choose-drink', component: ChooseDrinkComponent},
   { path: 'report-view', component: ReportViewComponent}
 ];
