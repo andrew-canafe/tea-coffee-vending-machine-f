@@ -3,11 +3,11 @@ import { ContainerRow } from 'src/app/model/container-row/container-row';
 import { ContainerService } from 'src/app/service/container-service/container.service';
 
 @Component({
-  selector: 'app-container',
-  templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  selector: 'app-container-status',
+  templateUrl: './container-status.component.html',
+  styleUrls: ['./container-status.component.css']
 })
-export class ContainerComponent implements OnInit {
+export class ContainerStatusComponent implements OnInit {
 
   containerRows: ContainerRow[] = [];
 
@@ -20,7 +20,6 @@ export class ContainerComponent implements OnInit {
   showContainerDetails() {
     this.containerService.getContainerDetails().subscribe(data => {
       this.containerRows = data;
-      //console.log(this.containers);
     });
   }
 

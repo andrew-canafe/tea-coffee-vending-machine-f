@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Container</td>
+                <td>All days</td>
+                <td>Today</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let rRow of refillRows">
+                <td>{{rRow.name}}</td>
+                <td>{{rRow.allDays}}</td>
+                <td>{{rRow.today}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

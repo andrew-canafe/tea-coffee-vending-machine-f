@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContainerComponent } from './container.component';
+import { ContainerRefillComponent } from './container-refill.component';
 
-describe('ContainerComponent', () => {
-  let component: ContainerComponent;
-  let fixture: ComponentFixture<ContainerComponent>;
+describe('ContainerRefillComponent', () => {
+  let component: ContainerRefillComponent;
+  let fixture: ComponentFixture<ContainerRefillComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContainerComponent ]
+      declarations: [ ContainerRefillComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContainerComponent);
+    fixture = TestBed.createComponent(ContainerRefillComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
