@@ -1,0 +1,12 @@
+<table>
+   <tbody>
+       <tr *ngFor="let dRow of drinkRows">
+        <td>{{dRow.name}}</td>
+        <td><input type="text" placeholder="1" ng-model="dRow.cupAmnt">Cup(s)</td>
+        <td>${{dRow.cost}}/cup</td>
+        <td>
+            <button type="submit" (click)="chooseDrink(dRow.cupAmnt,dRow.name)">Get Drink</button>
+        </td>
+       </tr>
+   </tbody>
+</table>

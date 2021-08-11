@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ContainerComponent } from './component/container/container.component';
 import { SaleAllDaysComponent } from './component/sale-all-days/sale-all-days.component';
 import { SaleTodayComponent } from './component/sale-today/sale-today.component';
+import { DrinkComponent } from './component/drink/drink.component';
+import { ReportComponent } from './component/report/report/report.component';
 
 
 
@@ -14,7 +16,9 @@ import { SaleTodayComponent } from './component/sale-today/sale-today.component'
     AppComponent,
     ContainerComponent,
     SaleAllDaysComponent,
-    SaleTodayComponent
+    SaleTodayComponent,
+    DrinkComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
