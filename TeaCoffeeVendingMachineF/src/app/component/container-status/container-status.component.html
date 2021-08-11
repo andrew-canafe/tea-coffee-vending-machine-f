@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Container</td>
+                <td>Max capacity</td>
+                <td>Available</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cRow of containerRows">
+                <td>{{cRow.name}}</td>
+                <td>{{cRow.maxCapacity}}</td>
+                <td>{{cRow.available}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

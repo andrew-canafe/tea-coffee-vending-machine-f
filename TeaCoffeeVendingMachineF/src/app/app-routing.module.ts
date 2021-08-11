@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContainerComponent } from './component/container/container.component';
+import { ContainerStatusComponent } from './component/container-status/container-status.component';
+import { ContainerRefillComponent } from './component/container-refill/container-refill.component';
+import { RefillCounterComponent } from './component/refill-counter/refill-counter.component';
 import { SaleAllDaysComponent } from './component/sale-all-days/sale-all-days.component';
 import { SaleTodayComponent } from './component/sale-today/sale-today.component';
 
 const routes: Routes = [
-  { path: 'container-details', component: ContainerComponent},
+  { path: 'container-status', component: ContainerStatusComponent},
+  { path: 'container-refill', component: ContainerRefillComponent},
+  { path: 'refill-counter', component: RefillCounterComponent},
   { path: 'total-sales/all-days' , component: SaleAllDaysComponent},
   { path: 'total-sales/today', component: SaleTodayComponent}
-
 ];
 
 @NgModule({
