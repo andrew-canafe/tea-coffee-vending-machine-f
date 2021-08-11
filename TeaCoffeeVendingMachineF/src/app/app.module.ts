@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerStatusComponent } from './component/container-status/container-status.component';
-import { SaleAllDaysComponent } from './component/sale-all-days/sale-all-days.component';
+import { TotalSalesAllDaysComponent } from './component/total-sales-all-days/total-sales-all-days.component';
 import { SaleTodayComponent } from './component/sale-today/sale-today.component';
 import { ContainerRefillComponent } from './component/container-refill/container-refill.component';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +18,7 @@ import { ReportViewComponent } from './component/report-view/report-view/report-
   declarations: [
     AppComponent,
     ContainerStatusComponent,
-    SaleAllDaysComponent,
+    TotalSalesAllDaysComponent,
     SaleTodayComponent,
     ContainerRefillComponent,
     RefillCounterComponent,
