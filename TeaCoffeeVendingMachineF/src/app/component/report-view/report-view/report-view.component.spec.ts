@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReportComponent } from './report.component';
+import { ReportViewComponent } from './report-view.component';
 
-describe('ReportComponent', () => {
-  let component: ReportComponent;
-  let fixture: ComponentFixture<ReportComponent>;
+describe('ReportViewComponent', () => {
+  let component: ReportViewComponent;
+  let fixture: ComponentFixture<ReportViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReportComponent ]
+      declarations: [ ReportViewComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReportComponent);
+    fixture = TestBed.createComponent(ReportViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

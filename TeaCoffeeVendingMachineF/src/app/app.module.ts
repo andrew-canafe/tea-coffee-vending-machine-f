@@ -10,7 +10,7 @@ import { ContainerRefillComponent } from './component/container-refill/container
 import { FormsModule } from '@angular/forms';
 import { RefillCounterComponent } from './component/refill-counter/refill-counter.component';
 import { ChooseDrinkComponent } from './component/choose-drink/choose-drink.component';
-import { ReportComponent } from './component/report/report/report.component';
+import { ReportViewComponent } from './component/report-view/report-view/report-view.component';
 
 
 
@@ -23,7 +23,7 @@ import { ReportComponent } from './component/report/report/report.component';
     ContainerRefillComponent,
     RefillCounterComponent,
     ChooseDrinkComponent,
-    ReportComponent
+    ReportViewComponent
   ],
   imports: [
     BrowserModule,
