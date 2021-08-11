@@ -1,5 +1,3 @@
-import { DrinkComponent } from "src/app/component/drink/drink.component";
-
 export interface Sale {
     saleId:number;
     drink: {

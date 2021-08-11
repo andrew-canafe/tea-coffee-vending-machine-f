@@ -4,10 +4,10 @@ import { SaleService } from 'src/app/service/sale-service/sale-service.service';
 
 @Component({
   selector: 'app-drink',
-  templateUrl: './drink.component.html',
-  styleUrls: ['./drink.component.css']
+  templateUrl: './choose-drink.component.html',
+  styleUrls: ['./choose-drink.component.css']
 })
-export class DrinkComponent implements OnInit {
+export class ChooseDrinkComponent implements OnInit {
 
   drinkRows: DrinkRow[] = [];
 
