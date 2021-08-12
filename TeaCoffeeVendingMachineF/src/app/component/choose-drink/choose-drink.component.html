@@ -1,21 +1,19 @@
-<div class="container">
-    <h2 class="text-center py-5">Choose Drink</h2>
-    <table class="table table-hover table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <td>Drink</td>
-                <td>Number of cups</td>
-                <td>Price per cup</td>
-                <td>Get drink</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let dRow of drinkRows">
-                <td>{{dRow.name}}</td>
-                <td><input type="text" placeholder="1" ng-model="dRow.cupAmnt"></td>
-                <td>${{dRow.cost}}</td>
-                <td><button type="submit" (click)="chooseDrink(dRow.cupAmnt,dRow.name)">Get drink</button></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<h2 class="text-center py-5">Choose Drink</h2>
+<table class="table table-hover table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <td>Drink</td>
+            <td>Number of cups</td>
+            <td>Price per cup</td>
+            <td>Get drink</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dRow of drinkRows">
+            <td>{{dRow.name}}</td>
+            <td><input type="text" [(ngModel)]="dRow.cupAmnt"></td>
+            <td>${{dRow.cost}}</td>
+            <td><button type="submit" (click)="chooseDrink(dRow.cupAmnt,dRow.name)">Get drink</button></td>
+        </tr>
+    </tbody>
+</table>

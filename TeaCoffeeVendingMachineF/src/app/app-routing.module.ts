@@ -10,12 +10,12 @@ import { TotalSalesTodayComponent } from './component/total-sales-today/total-sa
 
 const routes: Routes = [
   { path: 'choose-drink', component: ChooseDrinkComponent},
-  { path: 'container-status', component: ContainerStatusComponent},
-  { path: 'container-refill', component: ContainerRefillComponent},
-  { path: 'refill-counter', component: RefillCounterComponent},
-  { path: 'total-sales-all-days' , component: TotalSalesAllDaysComponent},
-  { path: 'total-sales-today', component: TotalSalesTodayComponent},
   { path: 'report-view', component: ReportViewComponent},
+  { path: 'total-sales-today', component: TotalSalesTodayComponent},
+  { path: 'total-sales-all-days' , component: TotalSalesAllDaysComponent},
+  { path: 'refill-counter', component: RefillCounterComponent},
+  { path: 'container-refill', component: ContainerRefillComponent},
+  { path: 'container-status', component: ContainerStatusComponent},
   { path: '**', redirectTo: '/choose-drink', pathMatch: 'full' }
 ];
 

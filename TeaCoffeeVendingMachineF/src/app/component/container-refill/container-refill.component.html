@@ -1,27 +1,25 @@
-<div class="container">
-    <h2 class="text-center py-5">Container Refill</h2>
-    <table class="table table-hover table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <td>Container</td>
-                <td>Max capacity</td>
-                <td>Available</td>
-                <td>Fill</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let cRow of containerRows">
-                <td>{{cRow.name}}</td>
-                <td>{{cRow.maxCapacity}}</td>
-                <td>{{cRow.available}}</td>
-                <td><input [(ngModel)]="cRow.fill"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button (click)="saveContainerDetails()">Refill</button></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<h2 class="text-center py-5">Container Refill</h2>
+<table class="table table-hover table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <td>Container</td>
+            <td>Max capacity</td>
+            <td>Available</td>
+            <td>Fill</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cRow of containerRows">
+            <td>{{cRow.name}}</td>
+            <td>{{cRow.maxCapacity}}</td>
+            <td>{{cRow.available}}</td>
+            <td><input [(ngModel)]="cRow.fill"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button (click)="saveContainerDetails(); reloadCurrentRoute();">Refill</button></td>
+        </tr>
+    </tbody>
+</table>

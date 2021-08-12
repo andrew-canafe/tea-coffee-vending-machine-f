@@ -22,6 +22,7 @@ export class ChooseDrinkComponent implements OnInit {
       this.drinkRows = data;
     });
   }
+
   chooseDrink(cupAmnt:number, name:string){
     this.saleService.chooseDrink(cupAmnt,name).subscribe(data => {
       console.log(data);
