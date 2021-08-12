@@ -1,19 +1,17 @@
-<div class="container">
-    <h2 class="text-center py-5">Total Sales for Today</h2>
-    <table class="table table-hover table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <td>Drink</td>
-                <td>Number of cups</td>
-                <td>Cost</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let sRow of saleRows">
-                <td>{{sRow.name}}</td>
-                <td>{{sRow.numberOfCupsToday}}</td>
-                <td>{{sRow.totalCostToday}}</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<h2 class="text-center py-5">Total Sales for Today</h2>
+<table class="table table-hover table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <td>Drink</td>
+            <td>Number of cups</td>
+            <td>Cost</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sRow of saleRows">
+            <td>{{sRow.name}}</td>
+            <td>{{sRow.numberOfCupsToday}}</td>
+            <td>{{sRow.totalCostToday}}</td>
+        </tr>
+    </tbody>
+</table>
