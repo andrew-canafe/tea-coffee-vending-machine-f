@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkRow } from 'src/app/model/drink-row/drink-row';
-import { SaleService } from 'src/app/service/sale-service/sale-service.service';
+import { HttpService } from 'src/app/service/http-service/http.service';
 
 @Component({
   selector: 'app-drink',
@@ -11,20 +11,20 @@ export class ChooseDrinkComponent implements OnInit {
 
   drinkRows: DrinkRow[] = [];
 
-  constructor(private saleService: SaleService) { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit(): void {
     this.getDrinkDetails();
   }
 
   getDrinkDetails(){
-    this.saleService.getDrinkDetails().subscribe(data => {
+    this.httpService.getDrinkDetails().subscribe(data => {
       this.drinkRows = data;
     });
   }
 
   chooseDrink(cupAmnt:number, name:string){
-    this.saleService.chooseDrink(cupAmnt,name).subscribe(data => {
+    this.httpService.chooseDrink(cupAmnt,name).subscribe(data => {
       console.log(data);
     });
   }

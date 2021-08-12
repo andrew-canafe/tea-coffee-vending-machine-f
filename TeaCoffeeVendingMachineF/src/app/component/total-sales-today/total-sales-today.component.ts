@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SaleRow } from 'src/app/model/sale-row/sale-row'; 
-import { SaleService } from 'src/app/service/sale-service/sale-service.service';
+import { HttpService } from 'src/app/service/http-service/http.service';
 
 @Component({
   selector: 'app-total-sales-today',
@@ -11,16 +11,15 @@ export class TotalSalesTodayComponent implements OnInit {
 
   saleRows: SaleRow[] = [];
 
-  constructor(private saleService: SaleService) { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit(): void {
     this.showSaleTodayDetails();
   }
 
   showSaleTodayDetails() {
-    this.saleService.getSaleTodayDetails().subscribe(data => {
+    this.httpService.getSaleTodayDetails().subscribe(data => {
       this.saleRows = data;
-      console.log(data);
     });
   }
 

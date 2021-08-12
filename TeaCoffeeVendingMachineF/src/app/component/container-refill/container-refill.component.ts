@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ContainerRow } from 'src/app/model/container-row/container-row';
 import { ContainerDetails } from 'src/app/model/container-details/container-details';
-import { ContainerService } from 'src/app/service/container-service/container.service';
 import { Router } from '@angular/router';
+import { HttpService } from 'src/app/service/http-service/http.service';
 
 @Component({
   selector: 'app-container-refill',
@@ -13,21 +13,21 @@ export class ContainerRefillComponent implements OnInit {
 
   public containerRows: ContainerRow[] = [];
 
-  constructor(private containerService: ContainerService, private router: Router) { }
+  constructor(private httpService: HttpService, private router: Router) { }
 
   ngOnInit(): void {
     this.showContainerDetails();
   }
 
   showContainerDetails() {
-    this.containerService.getContainerDetails().subscribe(data => {
+    this.httpService.getContainerDetails().subscribe(data => {
       this.containerRows = data;
     });
   }
 
   saveContainerDetails() {
     let body: ContainerDetails = {containerRowList: this.containerRows};
-    this.containerService.saveContainerDetails(body).subscribe(data => {
+    this.httpService.saveContainerDetails(body).subscribe(data => {
       console.log(data);
     });
   }
