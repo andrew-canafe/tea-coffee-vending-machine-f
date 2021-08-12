@@ -9,13 +9,14 @@ import { TotalSalesAllDaysComponent } from './component/total-sales-all-days/tot
 import { TotalSalesTodayComponent } from './component/total-sales-today/total-sales-today.component';
 
 const routes: Routes = [
+  { path: 'choose-drink', component: ChooseDrinkComponent},
   { path: 'container-status', component: ContainerStatusComponent},
   { path: 'container-refill', component: ContainerRefillComponent},
   { path: 'refill-counter', component: RefillCounterComponent},
-  { path: 'total-sales/all-days' , component: TotalSalesAllDaysComponent},
-  { path: 'total-sales/today', component: TotalSalesTodayComponent},
-  { path: 'choose-drink', component: ChooseDrinkComponent},
-  { path: 'report-view', component: ReportViewComponent}
+  { path: 'total-sales-all-days' , component: TotalSalesAllDaysComponent},
+  { path: 'total-sales-today', component: TotalSalesTodayComponent},
+  { path: 'report-view', component: ReportViewComponent},
+  { path: '**', redirectTo: '/choose-drink', pathMatch: 'full' }
 ];
 
 @NgModule({
