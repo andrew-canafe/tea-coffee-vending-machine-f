@@ -7,6 +7,8 @@ import { ChooseDrinkComponent } from './component/choose-drink/choose-drink.comp
 import { ReportViewComponent } from './component/report-view/report-view.component';
 import { TotalSalesAllDaysComponent } from './component/total-sales-all-days/total-sales-all-days.component';
 import { TotalSalesTodayComponent } from './component/total-sales-today/total-sales-today.component';
+import { LoginComponent } from './component/login/login.component';
+import { RegisterComponent } from './component/register/register.component';
 
 const routes: Routes = [
   { path: 'choose-drink', component: ChooseDrinkComponent},
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'refill-counter', component: RefillCounterComponent},
   { path: 'container-refill', component: ContainerRefillComponent},
   { path: 'container-status', component: ContainerStatusComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '/choose-drink', pathMatch: 'full' }
 ];
 

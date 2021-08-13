@@ -1,27 +1,29 @@
-<h2 class="text-center py-5">Report View</h2>
-<table class="table table-hover table-bordered">
-    <thead class="table-dark">
-        <tr>
-            <td>Report</td>
-            <td>View</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Total Sales for Today</td>
-            <td><a routerLink="/total-sales-today">View</a></td>
-        </tr>
-        <tr>
-            <td>Total Sales for All Days</td>
-            <td><a routerLink="/total-sales-all-days">View</a></td>
-        </tr>
-        <tr>
-            <td>Refill Counter</td>
-            <td><a routerLink="/refill-counter">View</a></td>
-        </tr>
-        <tr>
-            <td>Container Status</td>
-            <td><a routerLink="/container-status">View</a></td>
-        </tr>
-    </tbody>
-</table>
+<div class="container">
+    <h2 class="text-center py-5">Report View</h2>
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <td class="align-middle">Report</td>
+                <td class="align-middle">View</td>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            <tr>
+                <td class="align-middle">Total Sales for Today</td>
+                <td class="align-middle"><button class="btn btn-primary" routerLink="/total-sales-today">View</button></td>
+            </tr>
+            <tr>
+                <td class="align-middle">Total Sales for All Days</td>
+                <td class="align-middle"><button class="btn btn-primary" routerLink="/total-sales-all-days">View</button></td>
+            </tr>
+            <tr>
+                <td class="align-middle">Refill Counter</td>
+                <td class="align-middle"><button class="btn btn-primary" routerLink="/refill-counter">View</button></td>
+            </tr>
+            <tr>
+                <td class="align-middle">Container Status</td>
+                <td class="align-middle"><button class="btn btn-primary" routerLink="/container-status">View</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,6 +1,41 @@
-<div class="container mt-5">
-    <app-navigation-bar></app-navigation-bar>
+<div class="container">
+    <h1 class="text-center py-5">Tea Coffee Vending</h1>
 </div>
 <div class="container">
-    <router-outlet></router-outlet>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto" routerLinkActive="active">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="choose-drink">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="report-view" *ngIf="showAdminBoard">Report View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="container-refill" *ngIf="showAdminBoard">Container Refill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="container-status" *ngIf="showAdminBoard">Container Status</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="register">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="login">Login</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--
+    <app-navigation-bar></app-navigation-bar>
+    -->
 </div>
+<router-outlet></router-outlet>

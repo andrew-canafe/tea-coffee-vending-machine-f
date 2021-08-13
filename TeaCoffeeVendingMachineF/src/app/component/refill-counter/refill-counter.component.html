@@ -1,17 +1,19 @@
-<h2 class="text-center py-5">Refill Counter</h2>
-<table class="table table-hover table-bordered">
-    <thead class="table-dark">
-        <tr>
-            <td>Container</td>
-            <td>All days</td>
-            <td>Today</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let rRow of refillRows">
-            <td>{{rRow.name}}</td>
-            <td>{{rRow.allDays}}</td>
-            <td>{{rRow.today}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="container">
+    <h2 class="text-center py-5">Refill Counter</h2>
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <td class="align-middle">Container</td>
+                <td class="align-middle">All days</td>
+                <td class="align-middle">Today</td>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            <tr *ngFor="let rRow of refillRows">
+                <td class="align-middle">{{rRow.name}}</td>
+                <td class="align-middle">{{rRow.allDays}}</td>
+                <td class="align-middle">{{rRow.today}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
