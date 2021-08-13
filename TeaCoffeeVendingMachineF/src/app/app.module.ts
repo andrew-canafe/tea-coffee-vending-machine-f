@@ -12,8 +12,9 @@ import { RefillCounterComponent } from './component/refill-counter/refill-counte
 import { ChooseDrinkComponent } from './component/choose-drink/choose-drink.component';
 import { ReportViewComponent } from './component/report-view/report-view.component';
 import { NavigationBarComponent } from './component/navigation-bar/navigation-bar.component';
-
-
+import { RegisterComponent } from './component/register/register.component';
+import { LoginComponent } from './component/login/login.component';
+import { authInterceptorProviders } from './interceptor/auth-interceptor/auth-interceptor';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { NavigationBarComponent } from './component/navigation-bar/navigation-ba
     RefillCounterComponent,
     ChooseDrinkComponent,
     ReportViewComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import { NavigationBarComponent } from './component/navigation-bar/navigation-ba
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

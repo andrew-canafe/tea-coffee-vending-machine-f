@@ -1,17 +1,19 @@
-<h2 class="text-center py-5">Container Status</h2>
-<table class="table table-hover table-bordered">
-    <thead class="table-dark">
-        <tr>
-            <td>Container</td>
-            <td>Max capacity</td>
-            <td>Available</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let cRow of containerRows">
-            <td>{{cRow.name}}</td>
-            <td>{{cRow.maxCapacity}}</td>
-            <td>{{cRow.available}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="container">
+    <h2 class="text-center py-5">Container Status</h2>
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <td>Container</td>
+                <td>Max capacity</td>
+                <td>Available</td>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            <tr *ngFor="let cRow of containerRows">
+                <td>{{cRow.name}}</td>
+                <td>{{cRow.maxCapacity}}</td>
+                <td>{{cRow.available}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
