@@ -9,9 +9,11 @@ import { TotalSalesAllDaysComponent } from './component/total-sales-all-days/tot
 import { TotalSalesTodayComponent } from './component/total-sales-today/total-sales-today.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
 
 const routes: Routes = [
   { path: 'choose-drink', component: ChooseDrinkComponent},
+  { path: 'about-us', component: AboutUsComponent},
   { path: 'report-view', component: ReportViewComponent},
   { path: 'total-sales-today', component: TotalSalesTodayComponent},
   { path: 'total-sales-all-days' , component: TotalSalesAllDaysComponent},

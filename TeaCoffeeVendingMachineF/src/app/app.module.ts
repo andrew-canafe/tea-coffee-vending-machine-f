@@ -11,10 +11,10 @@ import { FormsModule } from '@angular/forms';
 import { RefillCounterComponent } from './component/refill-counter/refill-counter.component';
 import { ChooseDrinkComponent } from './component/choose-drink/choose-drink.component';
 import { ReportViewComponent } from './component/report-view/report-view.component';
-import { NavigationBarComponent } from './component/navigation-bar/navigation-bar.component';
 import { RegisterComponent } from './component/register/register.component';
 import { LoginComponent } from './component/login/login.component';
 import { authInterceptorProviders } from './interceptor/auth-interceptor/auth-interceptor';
+import { AboutUsComponent } from './component/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +26,9 @@ import { authInterceptorProviders } from './interceptor/auth-interceptor/auth-in
     RefillCounterComponent,
     ChooseDrinkComponent,
     ReportViewComponent,
-    NavigationBarComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
